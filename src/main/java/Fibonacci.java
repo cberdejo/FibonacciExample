@@ -8,7 +8,7 @@ import java.util.List;
 public class Fibonacci {
 
     public int compute(int number) {
-
+        if (number < 0) throw new RuntimeException("negative number:" + number);
         if (number == 0)
             return 0;
         else if (number == 1)

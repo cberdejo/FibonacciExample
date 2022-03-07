@@ -25,6 +25,7 @@ class FibonacciTest {
     public void finish(){
         fibonacci = null;
     }
+    @Test
     public void testFibonacci0(){
         int expectedValue = 0;
         int obtainedValue = fibonacci.compute(0);
@@ -55,7 +56,7 @@ class FibonacciTest {
     }
     @Test
     public void testFibonacci4(){
-        int expectedValue = 8;
+        int expectedValue = 3;
         int obtainedValue = fibonacci.compute(4);
 
         assertEquals(expectedValue,obtainedValue); //JUnit
@@ -63,7 +64,7 @@ class FibonacciTest {
     @Test
     public void testFibonacci8(){
         int expectedValue = 21;
-        int obtainedValue = fibonacci.compute(3);
+        int obtainedValue = fibonacci.compute(8);
 
         assertEquals(expectedValue,obtainedValue); //JUnit
     }
