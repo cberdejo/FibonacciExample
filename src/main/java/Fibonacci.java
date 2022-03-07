@@ -7,8 +7,16 @@ import java.util.List;
 
 public class Fibonacci {
 
-    public int  compute(int number){
+    public int compute(int number) {
+
+        if (number == 0)
+            return 0;
+        else if (number == 1)
+            return 1;
+        else
+            return compute(number - 1) + compute(number - 2);
 
     }
-
 }
+
+
